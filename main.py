@@ -5,15 +5,15 @@ def palindrome(x):
     if len(x) % 2 == 0:
         xref = x[int(len(x)/2):]
         if x[:int(len(x)/2)] == xref[::-1]:
-            return "Palindrome!"
+            return "Palindrome hai ye bhai!"
         else:
-            return "Nope!"
+            return "nhi hai palindrome ye!"
     else:
         xref = x[int(len(x) / 2) + 1:]
         if x[:int(len(x) / 2)] == xref[::-1]:
-            return "Palindrome!"
+            return "Palindrome hai ye bhai!"
         else:
-            return "Nope!"
+            return "nhi hai palindrome ye!"
 
 app = Flask(__name__)
 api = Api(app)

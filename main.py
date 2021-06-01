@@ -7,13 +7,13 @@ def palindrome(x):
         if x[:int(len(x)/2)] == xref[::-1]:
             return "Palindrome hai ye bhai!"
         else:
-            return "nhi hai palindrome ye!"
+            return "nhi hai palindrome ye, dimaag laga!"
     else:
         xref = x[int(len(x) / 2) + 1:]
         if x[:int(len(x) / 2)] == xref[::-1]:
             return "Palindrome hai ye bhai!"
         else:
-            return "nhi hai palindrome ye!"
+            return "nhi hai palindrome ye, dimaag laga!"
 
 app = Flask(__name__)
 api = Api(app)
